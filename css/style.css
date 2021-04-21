@@ -15,7 +15,7 @@ input, label{
     
 }
 
-input{
+input:focus outline:focus{
     outline:none;
 }
 
@@ -27,7 +27,7 @@ body{
     padding-top:5vh; /* view higt 5% da tela */
     background-size: cover;
     background-image: url(/imgs/ranger-4df6c1b6.png);
-    background-position-y: -150px ;
+    
 }
 
 
@@ -37,11 +37,11 @@ body{
     width:500px;
     margin-left: auto;
     margin-right: auto;
-   background-color: rgba(255, 255, 255, 0.315);
+   background-color: rgb(255, 255, 255);
     padding: 25px ;
 
 }
-.cadastro{
+#maincontainer h1{
     text-align: center;
     margin-bottom: 25px;
     font-size:1.6rem; /*adaptada ao elemento root */
@@ -69,15 +69,15 @@ form{
     margin-right: 2.5%;
 }
 
-labels{
+label{
     font-weight: bold;
     font-size:.8rem;
 }
 
 input{
-    border-bottom: 2px solid #323232;
+    border-bottom: 2px solid #08e4d1;
     padding: 10px;
-    margin-bottom: 80px;
+    margin-bottom: 30px;
     font: .9rem;
 }
 
@@ -85,7 +85,7 @@ input:focus{
     border-color:#E60084;
 }
 
-input[ type="submite"]{
+input[type="submit"]{
     background-color:#08e4d1;
     color: #FFF;
     border: none;
@@ -99,12 +99,9 @@ input[ type="submite"]{
     margin-right: 5px;
 }
 
-#input-div:before, .input-div:after{
-	content: '';
-	position: absolute;
-	bottom: -2px;
-	width: 0%;
-	height: 2px;
-	background-color: #2432ba;
-	transition: .4s;
+#agreement, #agreement-label{
+    display: inline-block;
+    width:auto;
 }
+
+
