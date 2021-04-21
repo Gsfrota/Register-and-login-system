@@ -9,14 +9,40 @@
 </head>
 
 <body>
-    <div id="main container">
-        <h1>Cadastro</h1>
+    <div id="maincontainer">
+        <h1 id="cadastro">Cadastro</h1>
         
         <form action="" method="post" id="register-form">
-            <div class="full box"></div>
+            <div class="fullbox">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Digite seu Email">
+            </div>
+            <div class="Half box spacing">
+                <label for="name">Nome</label>
+                <input type="text" name="name" id="name" placeholder="Digite seu Nome">
+            </div>
+            <div class="Halfbox">
+                <label for="lastname">Sobrenome</label>
+                <input type="text" name="lastname" id="lastname" placeholder="Digite seu Sobrenome">
+            </div>
+            <div class="Halfbox spacing">
+                <label for="password">Senha</label>
+                <input type="password" name="password" id="password" placeholder="Digite uma senha">
+            </div>
+            <div class="Halfbox">
+                <label for="passwordC">Confirme sua Senha</label>
+                <input type="password" name="passwordC" id="passwordC" placeholder="Confirme sua senha">
+            </div>
+            <div class="fullbox">
+               
+                <input type="checkbox" name="agreement" id="agreement" >
+                <label for="email">Eu li e aceito os <a href="">termos de uso</a> </label>
+            </div>
+            <input type="submit" name="btn-submit" value="Registrar">
         </form>
     </div>
 
+    <p class="Error-validate"></p>
 
     <script src="/js/validação.js"></script>
 
